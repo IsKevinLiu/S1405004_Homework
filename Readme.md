@@ -20,7 +20,7 @@ $$
 \min \frac{1}{2}\parallel Ax-b \parallel_2^2 + \lambda\parallel x\parallel_1
 $$
 
-由于存在非光滑项$\parallel x\parallel_1$使得目标函数不可微, 所以在求解过程中需要使用一些特殊的优化算法来进行求解. 例如: 近端梯度下降法, 交替方向乘子法等等.
+由于存在非光滑项 $\parallel x\parallel_1$ 使得目标函数不可微, 所以在求解过程中需要使用一些特殊的优化算法来进行求解. 例如: 近端梯度下降法, 交替方向乘子法等等.
 
 ## 二、Lasso问题的求解方法
 
@@ -28,17 +28,17 @@ $$
 
 #### 0.1 李普希兹常数 Lipschitz constant
 
-&emsp;&emsp;给定一个函数 $f:\R^n \to \R$，如果存在一个常数$L>0$，对于所有 $x,y \in \R^n$，都有：
+&emsp;&emsp;给定一个函数 $f:\R^n \to \R$，如果存在一个常数 $L>0$，对于所有 $x,y \in \R^n$，都有：
 
 $$
 \parallel \nabla f(x)-\nabla f(y) \parallel <= L \parallel x-y \parallel
 $$
 
-那么我们称$f$的梯度是李普希兹连续的, 且$L$是$f$的梯度的李普希兹常数.
+那么我们称 $f$ 的梯度是李普希兹连续的, 且 $L$ 是 $f$ 的梯度的李普希兹常数.
 
 #### 0.2 软阈值算子
 
-&emsp;&emsp;设有一个实数$\lambda>0$(阈值参数), 对于任意实数$x$, 软阈值算子$S_\lambda(x)$定义为:
+&emsp;&emsp;设有一个实数 $\lambda>0$ (阈值参数), 对于任意实数 $x$, 软阈值算子 $S_\lambda(x)$ 定义为:
 
 $$
 S_\lambda(x) = 
