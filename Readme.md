@@ -28,7 +28,7 @@ $$
 
 #### 2.0.1 李普希兹常数(Lipschitz Constant)
 
-&emsp;&emsp;给定一个函数 $f:\R^n \to \R$，如果存在一个常数 $L>0$，对于所有 $x,y \in \R^n$，都有：
+&emsp;&emsp;给定一个函数 $f:\mathbb{R}^n \to \mathbb{R}$，如果存在一个常数 $L>0$，对于所有 $x,y \in \R^n$，都有：
 
 $$
 \parallel \nabla f(x)-\nabla f(y) \parallel <= L \parallel x-y \parallel
@@ -100,9 +100,6 @@ $$
 \min_x f(x)=g(x)+h(x)
 $$
 
-其中, $f,g$是凸函数, 且$f \in \text{LC}^1$. 
-
-
+其中, $f,g$是凸函数, 且$f \in \text{LC}^1$.
 
 ### 2. 加速近端梯度下降法
-
